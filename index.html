@@ -40,7 +40,7 @@
               </header>
 
               <form class="sidebar-nav__search-form relative my-3 mx-6">
-                <input class="sidebar-nav__search-input p-3" type="search" placeholder="Search" name="search" />
+                <input class="sidebar-nav__search-input w-full h-11 rounded border border-[#cfcfcf] p-3" type="search" placeholder="Search" name="search" />
                 <button
                   class="sidebar-nav__search-submit absolute right-0 top-0 h-full p-3 flex items-center"
                   type="submit"
@@ -51,357 +51,873 @@
                 </button>
               </form>
 
-              <ul class="sidebar-nav__list">
+              <ul class="sidebar-nav__list font-sans list-none m-0 p-0 grow">
                 <li class="sidebar-nav__item sidebar-nav__item--has-submenu">
-                  <div class="sidebar-nav__group">
-                    <span class="sidebar-nav__group-title">Editions</span>
-                    <button class="sidebar-nav__toggle" aria-label="Toggle Editions submenu">
+                  <div class="sidebar-nav__group flex items-center h-10 px-6 font-bold">
+                    <span class="sidebar-nav__group-title font-sans text-sm">Editions</span>
+                    <button class="sidebar-nav__toggle ml-auto" aria-label="Toggle Editions submenu">
                       <i class="fa-solid fa-chevron-down"></i>
                     </button>
                   </div>
-                  <div class="sidebar-nav__submenu">
-                    <a class="sidebar-nav__submenu-link" href="#">United States</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Canada</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Australia</a>
-                    <a class="sidebar-nav__submenu-link" href="#">UK, Europe</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Bulgarian</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Chinese</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Czech</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Dutch</a>
-                    <a class="sidebar-nav__submenu-link" href="#">English</a>
-                    <a class="sidebar-nav__submenu-link" href="#">French</a>
-                    <a class="sidebar-nav__submenu-link" href="#">German</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Greek</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Indonesian</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Italian</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Japanese</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Korean</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Persian</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Polish</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Portuguese</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Romanian</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Russian</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Slovak</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Spanish</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Swedish</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Turkish</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Ukrainian</a>
+                  <div class="sidebar-nav__submenu fixed w-[220px] bg-white border border-[#f0f0f0] shadow-[0_4px_12px_rgba(0,0,0,0.1)] z-[110] invisible opacity-0">
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >United States</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Canada</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Australia</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >UK, Europe</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Bulgarian</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Chinese</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Czech</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Dutch</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >English</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >French</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >German</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Greek</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Indonesian</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Italian</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Japanese</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Korean</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Persian</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Polish</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Portuguese</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Romanian</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Russian</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Slovak</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Spanish</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Swedish</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Turkish</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Ukrainian</a
+                    >
                   </div>
                 </li>
                 <li class="sidebar-nav__item">
-                  <a class="sidebar-nav__link" href="#">Home Page</a>
+                  <a class="sidebar-nav__link flex items-center h-10 px-6 text-sm font-bold" href="#">Home Page</a>
                 </li>
                 <li class="sidebar-nav__item sidebar-nav__item--has-submenu">
-                  <div class="sidebar-nav__group">
-                    <a class="sidebar-nav__group-title" href="#">Arts &amp; Culture</a>
-                    <button class="sidebar-nav__toggle" aria-label="Toggle Arts & Culture submenu">
+                  <div class="sidebar-nav__group flex items-center h-10 px-6 font-bold">
+                    <a class="sidebar-nav__group-title font-sans text-sm" href="#">Arts &amp; Culture</a>
+                    <button class="sidebar-nav__toggle ml-auto" aria-label="Toggle Arts & Culture submenu">
                       <i class="fa-solid fa-chevron-down"></i>
                     </button>
                   </div>
-                  <div class="sidebar-nav__submenu">
-                    <a class="sidebar-nav__submenu-link" href="#">Arts &amp; Culture</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Fine Arts &amp; Craftsmanship</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Performing Arts</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Books</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Traditional Culture</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Shen Yun Special Coverage</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Film &amp; TV</a>
+                  <div class="sidebar-nav__submenu fixed w-[220px] bg-white border border-[#f0f0f0] shadow-[0_4px_12px_rgba(0,0,0,0.1)] z-[110] invisible opacity-0">
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Arts &amp; Culture</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Fine Arts &amp; Craftsmanship</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Performing Arts</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Books</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Traditional Culture</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Shen Yun Special Coverage</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Film &amp; TV</a
+                    >
                   </div>
                 </li>
                 <li class="sidebar-nav__item sidebar-nav__item--has-submenu">
-                  <div class="sidebar-nav__group">
-                    <a class="sidebar-nav__group-title" href="#">Bright</a>
-                    <button class="sidebar-nav__toggle" aria-label="Toggle Bright submenu">
+                  <div class="sidebar-nav__group flex items-center h-10 px-6 font-bold">
+                    <a class="sidebar-nav__group-title font-sans text-sm" href="#">Bright</a>
+                    <button class="sidebar-nav__toggle ml-auto" aria-label="Toggle Bright submenu">
                       <i class="fa-solid fa-chevron-down"></i>
                     </button>
                   </div>
-                  <div class="sidebar-nav__submenu">
-                    <a class="sidebar-nav__submenu-link" href="#">Bright</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Arts &amp; Culture</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Family &amp; Education</a>
-                    <a class="sidebar-nav__submenu-link" href="#">American Essence</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Personal Finance</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Leadership</a>
+                  <div class="sidebar-nav__submenu fixed w-[220px] bg-white border border-[#f0f0f0] shadow-[0_4px_12px_rgba(0,0,0,0.1)] z-[110] invisible opacity-0">
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Bright</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Arts &amp; Culture</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Family &amp; Education</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >American Essence</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Personal Finance</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Leadership</a
+                    >
                   </div>
                 </li>
                 <li class="sidebar-nav__item sidebar-nav__item--has-submenu">
-                  <div class="sidebar-nav__group">
-                    <a class="sidebar-nav__group-title" href="#">Business</a>
-                    <button class="sidebar-nav__toggle" aria-label="Toggle Business submenu">
+                  <div class="sidebar-nav__group flex items-center h-10 px-6 font-bold">
+                    <a class="sidebar-nav__group-title font-sans text-sm" href="#">Business</a>
+                    <button class="sidebar-nav__toggle ml-auto" aria-label="Toggle Business submenu">
                       <i class="fa-solid fa-chevron-down"></i>
                     </button>
                   </div>
-                  <div class="sidebar-nav__submenu">
-                    <a class="sidebar-nav__submenu-link" href="#">Business</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Markets</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Tech &amp; Innovation</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Personal Finance</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Real Estate</a>
+                  <div class="sidebar-nav__submenu fixed w-[220px] bg-white border border-[#f0f0f0] shadow-[0_4px_12px_rgba(0,0,0,0.1)] z-[110] invisible opacity-0">
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Business</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Markets</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Tech &amp; Innovation</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Personal Finance</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Real Estate</a
+                    >
                   </div>
                 </li>
                 <li class="sidebar-nav__item sidebar-nav__item--has-submenu">
-                  <div class="sidebar-nav__group">
-                    <a class="sidebar-nav__group-title" href="#">China News</a>
-                    <button class="sidebar-nav__toggle" aria-label="Toggle China News submenu">
+                  <div class="sidebar-nav__group flex items-center h-10 px-6 font-bold">
+                    <a class="sidebar-nav__group-title font-sans text-sm" href="#">China News</a>
+                    <button class="sidebar-nav__toggle ml-auto" aria-label="Toggle China News submenu">
                       <i class="fa-solid fa-chevron-down"></i>
                     </button>
                   </div>
-                  <div class="sidebar-nav__submenu">
-                    <a class="sidebar-nav__submenu-link" href="#">China News</a>
-                    <a class="sidebar-nav__submenu-link" href="#">US-China Relations</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Chinese Regime</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Business &amp; Economy</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Chinese Culture</a>
-                    <a class="sidebar-nav__submenu-link" href="#">China Human Rights</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Social Issues</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Organ Harvesting in China</a>
+                  <div class="sidebar-nav__submenu fixed w-[220px] bg-white border border-[#f0f0f0] shadow-[0_4px_12px_rgba(0,0,0,0.1)] z-[110] invisible opacity-0">
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >China News</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >US-China Relations</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Chinese Regime</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Business &amp; Economy</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Chinese Culture</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >China Human Rights</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Social Issues</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Organ Harvesting in China</a
+                    >
                   </div>
                 </li>
                 <li class="sidebar-nav__item sidebar-nav__item--has-submenu">
-                  <div class="sidebar-nav__group">
-                    <a class="sidebar-nav__group-title" href="#">Entertainment</a>
-                    <button class="sidebar-nav__toggle" aria-label="Toggle Entertainment submenu">
+                  <div class="sidebar-nav__group flex items-center h-10 px-6 font-bold">
+                    <a class="sidebar-nav__group-title font-sans text-sm" href="#">Entertainment</a>
+                    <button class="sidebar-nav__toggle ml-auto" aria-label="Toggle Entertainment submenu">
                       <i class="fa-solid fa-chevron-down"></i>
                     </button>
                   </div>
-                  <div class="sidebar-nav__submenu">
-                    <a class="sidebar-nav__submenu-link" href="#">Entertainment</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Film &amp; TV</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Entertainment News</a>
+                  <div class="sidebar-nav__submenu fixed w-[220px] bg-white border border-[#f0f0f0] shadow-[0_4px_12px_rgba(0,0,0,0.1)] z-[110] invisible opacity-0">
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Entertainment</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Film &amp; TV</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Entertainment News</a
+                    >
                   </div>
                 </li>
                 <li class="sidebar-nav__item sidebar-nav__item--has-submenu">
-                  <div class="sidebar-nav__group">
-                    <a class="sidebar-nav__group-title" href="#">EpochBuy</a>
-                    <button class="sidebar-nav__toggle" aria-label="Toggle EpochBuy submenu">
+                  <div class="sidebar-nav__group flex items-center h-10 px-6 font-bold">
+                    <a class="sidebar-nav__group-title font-sans text-sm" href="#">EpochBuy</a>
+                    <button class="sidebar-nav__toggle ml-auto" aria-label="Toggle EpochBuy submenu">
                       <i class="fa-solid fa-chevron-down"></i>
                     </button>
                   </div>
-                  <div class="sidebar-nav__submenu">
-                    <a class="sidebar-nav__submenu-link" href="#">EpochBuy</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Accessories</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Bathroom</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Cleaning</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Homedecor</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Home Garden</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Personal Care</a>
+                  <div class="sidebar-nav__submenu fixed w-[220px] bg-white border border-[#f0f0f0] shadow-[0_4px_12px_rgba(0,0,0,0.1)] z-[110] invisible opacity-0">
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >EpochBuy</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Accessories</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Bathroom</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Cleaning</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Homedecor</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Home Garden</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Personal Care</a
+                    >
                   </div>
                 </li>
                 <li class="sidebar-nav__item sidebar-nav__item--has-submenu">
-                  <div class="sidebar-nav__group">
-                    <a class="sidebar-nav__group-title" href="#">EpochHealth</a>
-                    <button class="sidebar-nav__toggle" aria-label="Toggle EpochHealth submenu">
+                  <div class="sidebar-nav__group flex items-center h-10 px-6 font-bold">
+                    <a class="sidebar-nav__group-title font-sans text-sm" href="#">EpochHealth</a>
+                    <button class="sidebar-nav__toggle ml-auto" aria-label="Toggle EpochHealth submenu">
                       <i class="fa-solid fa-chevron-down"></i>
                     </button>
                   </div>
-                  <div class="sidebar-nav__submenu">
-                    <a class="sidebar-nav__submenu-link" href="#">EpochHealth</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Wellness</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Nutrition</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Fitness</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Mental Health</a>
-                    <a class="sidebar-nav__submenu-link" href="#">COVID-19</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Integrative Health</a>
+                  <div class="sidebar-nav__submenu fixed w-[220px] bg-white border border-[#f0f0f0] shadow-[0_4px_12px_rgba(0,0,0,0.1)] z-[110] invisible opacity-0">
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >EpochHealth</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Wellness</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Nutrition</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Fitness</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Mental Health</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >COVID-19</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Integrative Health</a
+                    >
                   </div>
                 </li>
                 <li class="sidebar-nav__item sidebar-nav__item--has-submenu">
-                  <div class="sidebar-nav__group">
-                    <a class="sidebar-nav__group-title" href="#">EpochTV</a>
-                    <button class="sidebar-nav__toggle" aria-label="Toggle EpochTV submenu">
+                  <div class="sidebar-nav__group flex items-center h-10 px-6 font-bold">
+                    <a class="sidebar-nav__group-title font-sans text-sm" href="#">EpochTV</a>
+                    <button class="sidebar-nav__toggle ml-auto" aria-label="Toggle EpochTV submenu">
                       <i class="fa-solid fa-chevron-down"></i>
                     </button>
                   </div>
-                  <div class="sidebar-nav__submenu">
-                    <a class="sidebar-nav__submenu-link" href="#">EpochTV</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Talk Shows</a>
-                    <a class="sidebar-nav__submenu-link" href="#">News</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Documentaries</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Cinema</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Lifestyle</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Arts &amp; Culture</a>
+                  <div class="sidebar-nav__submenu fixed w-[220px] bg-white border border-[#f0f0f0] shadow-[0_4px_12px_rgba(0,0,0,0.1)] z-[110] invisible opacity-0">
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >EpochTV</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Talk Shows</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >News</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Documentaries</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Cinema</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Lifestyle</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Arts &amp; Culture</a
+                    >
                   </div>
                 </li>
                 <li class="sidebar-nav__item sidebar-nav__item--has-submenu">
-                  <div class="sidebar-nav__group">
-                    <a class="sidebar-nav__group-title" href="#">Games</a>
-                    <button class="sidebar-nav__toggle" aria-label="Toggle Games submenu">
+                  <div class="sidebar-nav__group flex items-center h-10 px-6 font-bold">
+                    <a class="sidebar-nav__group-title font-sans text-sm" href="#">Games</a>
+                    <button class="sidebar-nav__toggle ml-auto" aria-label="Toggle Games submenu">
                       <i class="fa-solid fa-chevron-down"></i>
                     </button>
                   </div>
-                  <div class="sidebar-nav__submenu">
-                    <a class="sidebar-nav__submenu-link" href="#">Games</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Sudoku</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Spot the Difference</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Blossom Word Game</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Word Search Central</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Sweet Shuffle</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Today’s Hurdle</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Mahjong Dimensions</a>
+                  <div class="sidebar-nav__submenu fixed w-[220px] bg-white border border-[#f0f0f0] shadow-[0_4px_12px_rgba(0,0,0,0.1)] z-[110] invisible opacity-0">
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Games</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Sudoku</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Spot the Difference</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Blossom Word Game</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Word Search Central</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Sweet Shuffle</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Today’s Hurdle</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Mahjong Dimensions</a
+                    >
                   </div>
                 </li>
                 <li class="sidebar-nav__item">
-                  <a class="sidebar-nav__link" href="#">Latest Articles</a>
+                  <a class="sidebar-nav__link flex items-center h-10 px-6 text-sm font-bold" href="#">Latest Articles</a>
                 </li>
                 <li class="sidebar-nav__item sidebar-nav__item--has-submenu">
-                  <div class="sidebar-nav__group">
-                    <a class="sidebar-nav__group-title" href="#">Lifestyle</a>
-                    <button class="sidebar-nav__toggle" aria-label="Toggle Lifestyle submenu">
+                  <div class="sidebar-nav__group flex items-center h-10 px-6 font-bold">
+                    <a class="sidebar-nav__group-title font-sans text-sm" href="#">Lifestyle</a>
+                    <button class="sidebar-nav__toggle ml-auto" aria-label="Toggle Lifestyle submenu">
                       <i class="fa-solid fa-chevron-down"></i>
                     </button>
                   </div>
-                  <div class="sidebar-nav__submenu">
-                    <a class="sidebar-nav__submenu-link" href="#">Lifestyle</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Life</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Food</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Travel</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Science</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Entertainment</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Sports</a>
+                  <div class="sidebar-nav__submenu fixed w-[220px] bg-white border border-[#f0f0f0] shadow-[0_4px_12px_rgba(0,0,0,0.1)] z-[110] invisible opacity-0">
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Lifestyle</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Life</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Food</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Travel</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Science</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Entertainment</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Sports</a
+                    >
                   </div>
                 </li>
                 <li class="sidebar-nav__item sidebar-nav__item--has-submenu">
-                  <div class="sidebar-nav__group">
-                    <a class="sidebar-nav__group-title" href="#">Opinion</a>
-                    <button class="sidebar-nav__toggle" aria-label="Toggle Opinion submenu">
+                  <div class="sidebar-nav__group flex items-center h-10 px-6 font-bold">
+                    <a class="sidebar-nav__group-title font-sans text-sm" href="#">Opinion</a>
+                    <button class="sidebar-nav__toggle ml-auto" aria-label="Toggle Opinion submenu">
                       <i class="fa-solid fa-chevron-down"></i>
                     </button>
                   </div>
-                  <div class="sidebar-nav__submenu">
-                    <a class="sidebar-nav__submenu-link" href="#">Opinion</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Editorials</a>
+                  <div class="sidebar-nav__submenu fixed w-[220px] bg-white border border-[#f0f0f0] shadow-[0_4px_12px_rgba(0,0,0,0.1)] z-[110] invisible opacity-0">
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Opinion</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Editorials</a
+                    >
                   </div>
                 </li>
                 <li class="sidebar-nav__item">
-                  <a class="sidebar-nav__link" href="#">Podcasts</a>
+                  <a class="sidebar-nav__link flex items-center h-10 px-6 text-sm font-bold" href="#">Podcasts</a>
                 </li>
                 <li class="sidebar-nav__item">
-                  <a class="sidebar-nav__link" href="#">Premium</a>
+                  <a class="sidebar-nav__link flex items-center h-10 px-6 text-sm font-bold" href="#">Premium</a>
                 </li>
                 <li class="sidebar-nav__item sidebar-nav__item--has-submenu">
-                  <div class="sidebar-nav__group">
-                    <a class="sidebar-nav__group-title" href="#">Recipes</a>
-                    <button class="sidebar-nav__toggle" aria-label="Toggle Recipes submenu">
+                  <div class="sidebar-nav__group flex items-center h-10 px-6 font-bold">
+                    <a class="sidebar-nav__group-title font-sans text-sm" href="#">Recipes</a>
+                    <button class="sidebar-nav__toggle ml-auto" aria-label="Toggle Recipes submenu">
                       <i class="fa-solid fa-chevron-down"></i>
                     </button>
                   </div>
-                  <div class="sidebar-nav__submenu">
-                    <a class="sidebar-nav__submenu-link" href="#">Recipes</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Dinner</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Breakfast</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Easy</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Healthy</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Weeknight</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Pastas</a>
+                  <div class="sidebar-nav__submenu fixed w-[220px] bg-white border border-[#f0f0f0] shadow-[0_4px_12px_rgba(0,0,0,0.1)] z-[110] invisible opacity-0">
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Recipes</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Dinner</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Breakfast</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Easy</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Healthy</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Weeknight</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Pastas</a
+                    >
                   </div>
                 </li>
                 <li class="sidebar-nav__item sidebar-nav__item--has-submenu">
-                  <div class="sidebar-nav__group">
-                    <a class="sidebar-nav__group-title" href="#">Science</a>
-                    <button class="sidebar-nav__toggle" aria-label="Toggle Science submenu">
+                  <div class="sidebar-nav__group flex items-center h-10 px-6 font-bold">
+                    <a class="sidebar-nav__group-title font-sans text-sm" href="#">Science</a>
+                    <button class="sidebar-nav__toggle ml-auto" aria-label="Toggle Science submenu">
                       <i class="fa-solid fa-chevron-down"></i>
                     </button>
                   </div>
-                  <div class="sidebar-nav__submenu">
-                    <a class="sidebar-nav__submenu-link" href="#">Science</a>
-                    <a class="sidebar-nav__submenu-link" href="#">News</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Space</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Environment</a>
+                  <div class="sidebar-nav__submenu fixed w-[220px] bg-white border border-[#f0f0f0] shadow-[0_4px_12px_rgba(0,0,0,0.1)] z-[110] invisible opacity-0">
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Science</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >News</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Space</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Environment</a
+                    >
                   </div>
                 </li>
                 <li class="sidebar-nav__item">
-                  <a class="sidebar-nav__link" href="#">Special Coverage</a>
+                  <a class="sidebar-nav__link flex items-center h-10 px-6 text-sm font-bold" href="#">Special Coverage</a>
                 </li>
                 <li class="sidebar-nav__item">
-                  <a class="sidebar-nav__link" href="#">Special Series</a>
+                  <a class="sidebar-nav__link flex items-center h-10 px-6 text-sm font-bold" href="#">Special Series</a>
                 </li>
                 <li class="sidebar-nav__item sidebar-nav__item--has-submenu">
-                  <div class="sidebar-nav__group">
-                    <a class="sidebar-nav__group-title" href="#">Sports</a>
-                    <button class="sidebar-nav__toggle" aria-label="Toggle Sports submenu">
+                  <div class="sidebar-nav__group flex items-center h-10 px-6 font-bold">
+                    <a class="sidebar-nav__group-title font-sans text-sm" href="#">Sports</a>
+                    <button class="sidebar-nav__toggle ml-auto" aria-label="Toggle Sports submenu">
                       <i class="fa-solid fa-chevron-down"></i>
                     </button>
                   </div>
-                  <div class="sidebar-nav__submenu">
-                    <a class="sidebar-nav__submenu-link" href="#">Sports</a>
-                    <a class="sidebar-nav__submenu-link" href="#">NFL</a>
-                    <a class="sidebar-nav__submenu-link" href="#">NBA</a>
-                    <a class="sidebar-nav__submenu-link" href="#">MLB</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Soccer</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Tennis</a>
+                  <div class="sidebar-nav__submenu fixed w-[220px] bg-white border border-[#f0f0f0] shadow-[0_4px_12px_rgba(0,0,0,0.1)] z-[110] invisible opacity-0">
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Sports</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >NFL</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >NBA</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >MLB</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Soccer</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Tennis</a
+                    >
                   </div>
                 </li>
                 <li class="sidebar-nav__item sidebar-nav__item--has-submenu">
-                  <div class="sidebar-nav__group">
-                    <a class="sidebar-nav__group-title" href="#">Tech</a>
-                    <button class="sidebar-nav__toggle" aria-label="Toggle Tech submenu">
+                  <div class="sidebar-nav__group flex items-center h-10 px-6 font-bold">
+                    <a class="sidebar-nav__group-title font-sans text-sm" href="#">Tech</a>
+                    <button class="sidebar-nav__toggle ml-auto" aria-label="Toggle Tech submenu">
                       <i class="fa-solid fa-chevron-down"></i>
                     </button>
                   </div>
-                  <div class="sidebar-nav__submenu">
-                    <a class="sidebar-nav__submenu-link" href="#">Tech</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Tech News</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Tech Products &amp; Reviews</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Social Media</a>
+                  <div class="sidebar-nav__submenu fixed w-[220px] bg-white border border-[#f0f0f0] shadow-[0_4px_12px_rgba(0,0,0,0.1)] z-[110] invisible opacity-0">
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Tech</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Tech News</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Tech Products &amp; Reviews</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Social Media</a
+                    >
                   </div>
                 </li>
                 <li class="sidebar-nav__item">
-                  <a class="sidebar-nav__link" href="#">Top News</a>
+                  <a class="sidebar-nav__link flex items-center h-10 px-6 text-sm font-bold" href="#">Top News</a>
                 </li>
                 <li class="sidebar-nav__item sidebar-nav__item--has-submenu">
-                  <div class="sidebar-nav__group">
-                    <a class="sidebar-nav__group-title" href="#">US</a>
-                    <button class="sidebar-nav__toggle" aria-label="Toggle US submenu">
+                  <div class="sidebar-nav__group flex items-center h-10 px-6 font-bold">
+                    <a class="sidebar-nav__group-title font-sans text-sm" href="#">US</a>
+                    <button class="sidebar-nav__toggle ml-auto" aria-label="Toggle US submenu">
                       <i class="fa-solid fa-chevron-down"></i>
                     </button>
                   </div>
-                  <div class="sidebar-nav__submenu">
-                    <a class="sidebar-nav__submenu-link" href="#">US</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Politics</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Economy</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Crime</a>
-                    <a class="sidebar-nav__submenu-link" href="#">States</a>
-                    <a class="sidebar-nav__submenu-link" href="#">New York</a>
-                    <a class="sidebar-nav__submenu-link" href="#">California</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Education</a>
+                  <div class="sidebar-nav__submenu fixed w-[220px] bg-white border border-[#f0f0f0] shadow-[0_4px_12px_rgba(0,0,0,0.1)] z-[110] invisible opacity-0">
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >US</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Politics</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Economy</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Crime</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >States</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >New York</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >California</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Education</a
+                    >
                   </div>
                 </li>
                 <li class="sidebar-nav__item sidebar-nav__item--has-submenu">
-                  <div class="sidebar-nav__group">
-                    <a class="sidebar-nav__group-title" href="#">World</a>
-                    <button class="sidebar-nav__toggle" aria-label="Toggle World submenu">
+                  <div class="sidebar-nav__group flex items-center h-10 px-6 font-bold">
+                    <a class="sidebar-nav__group-title font-sans text-sm" href="#">World</a>
+                    <button class="sidebar-nav__toggle ml-auto" aria-label="Toggle World submenu">
                       <i class="fa-solid fa-chevron-down"></i>
                     </button>
                   </div>
-                  <div class="sidebar-nav__submenu">
-                    <a class="sidebar-nav__submenu-link" href="#">World</a>
-                    <a class="sidebar-nav__submenu-link" href="#">China</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Asia Pacific</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Europe</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Middle East</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Americas</a>
-                    <a class="sidebar-nav__submenu-link" href="#">Africa</a>
+                  <div class="sidebar-nav__submenu fixed w-[220px] bg-white border border-[#f0f0f0] shadow-[0_4px_12px_rgba(0,0,0,0.1)] z-[110] invisible opacity-0">
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >World</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >China</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Asia Pacific</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Europe</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Middle East</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Americas</a
+                    >
+                    <a
+                      class="sidebar-nav__submenu-link block p-2 pt-2 pb-2 text-sm font-bold whitespace-nowrap"
+                      href="#"
+                      >Africa</a
+                    >
                   </div>
                 </li>
                 <li class="sidebar-nav__item">
                   <hr class="sidebar-nav__divider border-top my-3 mx-6" />
                   <ul class="sidebar-nav__footer-list">
-                    <li class="sidebar-nav__footer-item">
-                      <a class="sidebar-nav__footer-link" href="#">Help Center</a>
+                    <li class="sidebar-nav__footer-item flex items-center h-[34px] px-6">
+                      <a class="sidebar-nav__footer-link text-sm" href="#">Help Center</a>
                     </li>
-                    <li class="sidebar-nav__footer-item">
-                      <a class="sidebar-nav__footer-link" href="#">Subscribe</a>
+                    <li class="sidebar-nav__footer-item flex items-center h-[34px] px-6">
+                      <a class="sidebar-nav__footer-link text-sm" href="#">Subscribe</a>
                     </li>
-                    <li class="sidebar-nav__footer-item">
-                      <a class="sidebar-nav__footer-link" href="#">Newsletters</a>
+                    <li class="sidebar-nav__footer-item flex items-center h-[34px] px-6">
+                      <a class="sidebar-nav__footer-link text-sm" href="#">Newsletters</a>
                     </li>
-                    <li class="sidebar-nav__footer-item">
-                      <a class="sidebar-nav__footer-link" href="#">Newsstands</a>
+                    <li class="sidebar-nav__footer-item flex items-center h-[34px] px-6">
+                      <a class="sidebar-nav__footer-link text-sm" href="#">Newsstands</a>
                     </li>
-                    <li class="sidebar-nav__footer-item">
-                      <a class="sidebar-nav__footer-link" href="#">Epoch Shop</a>
+                    <li class="sidebar-nav__footer-item flex items-center h-[34px] px-6">
+                      <a class="sidebar-nav__footer-link text-sm" href="#">Epoch Shop</a>
                     </li>
-                    <li class="sidebar-nav__footer-item">
-                      <a class="sidebar-nav__footer-link" href="#">Gift</a>
+                    <li class="sidebar-nav__footer-item flex items-center h-[34px] px-6">
+                      <a class="sidebar-nav__footer-link text-sm" href="#">Gift</a>
                     </li>
                   </ul>
                 </li>
@@ -455,51 +971,54 @@
               Editions
               <i class="fas fa-play fa-rotate-90 fa-2xs"></i>
             </button>
-            <div class="nav-bar__editions-menu" id="editions-menu">
-              <a href="#" class="nav-bar__editions-link">UNITED STATES</a>
-              <a href="#" class="nav-bar__editions-link">CANADA</a>
-              <a href="#" class="nav-bar__editions-link">AUSTRALIA</a>
-              <a href="#" class="nav-bar__editions-link">UK, EUROPE</a>
+            <div
+              class="nav-bar__editions-menu w-[145px] pt-3 pb-7 px-0 border border-[#ccc] bg-white z-1"
+              id="editions-menu"
+            >
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">UNITED STATES</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">CANADA</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">AUSTRALIA</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">UK, EUROPE</a>
               <hr class="nav-bar__editions-divider w-[100px] mx-auto h-px" />
-              <a href="#" class="nav-bar__editions-link">BULGARIAN</a>
-              <a href="#" class="nav-bar__editions-link">CHINESE</a>
-              <a href="#" class="nav-bar__editions-link">CZECH</a>
-              <a href="#" class="nav-bar__editions-link">DUTCH</a>
-              <a href="#" class="nav-bar__editions-link">ENGLISH</a>
-              <a href="#" class="nav-bar__editions-link">FRENCH</a>
-              <a href="#" class="nav-bar__editions-link">BULGARIAN</a>
-              <a href="#" class="nav-bar__editions-link">CHINESE</a>
-              <a href="#" class="nav-bar__editions-link">CZECH</a>
-              <a href="#" class="nav-bar__editions-link">DUTCH</a>
-              <a href="#" class="nav-bar__editions-link">ENGLISH</a>
-              <a href="#" class="nav-bar__editions-link">FRENCH</a>
-              <a href="#" class="nav-bar__editions-link">GERMAN</a>
-              <a href="#" class="nav-bar__editions-link">GREEK</a>
-              <a href="#" class="nav-bar__editions-link">INDONESIAN</a>
-              <a href="#" class="nav-bar__editions-link">ITALIAN</a>
-              <a href="#" class="nav-bar__editions-link">JAPANESE</a>
-              <a href="#" class="nav-bar__editions-link">KOREAN</a>
-              <a href="#" class="nav-bar__editions-link">PERSIAN</a>
-              <a href="#" class="nav-bar__editions-link">POLISH</a>
-              <a href="#" class="nav-bar__editions-link">PORTUGUESE</a>
-              <a href="#" class="nav-bar__editions-link">ROMANIAN</a>
-              <a href="#" class="nav-bar__editions-link">RUSSIAN</a>
-              <a href="#" class="nav-bar__editions-link">SLOVAK</a>
-              <a href="#" class="nav-bar__editions-link">SPANISH</a>
-              <a href="#" class="nav-bar__editions-link">SWEDISH</a>
-              <a href="#" class="nav-bar__editions-link">TURKISH</a>
-              <a href="#" class="nav-bar__editions-link">UKRAINIAN</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">BULGARIAN</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">CHINESE</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">CZECH</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">DUTCH</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">ENGLISH</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">FRENCH</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">BULGARIAN</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">CHINESE</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">CZECH</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">DUTCH</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">ENGLISH</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">FRENCH</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">GERMAN</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">GREEK</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">INDONESIAN</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">ITALIAN</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">JAPANESE</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">KOREAN</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">PERSIAN</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">POLISH</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">PORTUGUESE</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">ROMANIAN</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">RUSSIAN</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">SLOVAK</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">SPANISH</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">SWEDISH</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">TURKISH</a>
+              <a href="#" class="nav-bar__editions-link block py-1 px-4">UKRAINIAN</a>
             </div>
           </div>
         </div>
 
         <div class="nav-bar__center h-12 flex items-center pl-5">
-          <div class="nav-bar__item nav-bar__item--full-width">
+          <div class="nav-bar__item nav-bar__item--full-width pr-4 font-bold">
             <a href="#" class="nav-bar__link">
               US
               <i class="fa-solid fa-angle-down fa-xs" aria-hidden="true"></i>
             </a>
-            <div class="nav-bar__dropdown">
+            <div class="nav-bar__dropdown block border border-[#eee] py-[35px] px-5 top-full left-0 right-0 bg-white">
               <div class="nav-bar__dropdown-content flex gap-10 max-w-[1200px] mx-auto">
                 <div class="nav-bar__dropdown-left w-[250px] shrink-0">
                   <div class="nav-bar__dropdown-heading text-[26px] mb-3 font-light">US</div>
@@ -642,12 +1161,12 @@
             </div>
           </div>
 
-          <div class="nav-bar__item nav-bar__item--full-width">
+          <div class="nav-bar__item nav-bar__item--full-width pr-4 font-bold">
             <a href="#" class="nav-bar__link">
               World
               <i class="fa-solid fa-angle-down fa-xs" aria-hidden="true"></i>
             </a>
-            <div class="nav-bar__dropdown">
+            <div class="nav-bar__dropdown block border border-[#eee] py-[35px] px-5 top-full left-0 right-0 bg-white">
               <div class="nav-bar__dropdown-content flex gap-10 max-w-[1200px] mx-auto">
                 <div class="nav-bar__dropdown-left w-[250px] shrink-0">
                   <div class="nav-bar__dropdown-heading text-[26px] mb-3 font-light">World</div>
@@ -784,12 +1303,12 @@
             </div>
           </div>
 
-          <div class="nav-bar__item nav-bar__item--full-width">
+          <div class="nav-bar__item nav-bar__item--full-width pr-4 font-bold">
             <a href="#" class="nav-bar__link">
               Business
               <i class="fa-solid fa-angle-down fa-xs" aria-hidden="true"></i>
             </a>
-            <div class="nav-bar__dropdown">
+            <div class="nav-bar__dropdown block border border-[#eee] py-[35px] px-5 top-full left-0 right-0 bg-white">
               <div class="nav-bar__dropdown-content flex gap-10 max-w-[1200px] mx-auto">
                 <div class="nav-bar__dropdown-left w-[250px] shrink-0">
                   <div class="nav-bar__dropdown-heading text-[26px] mb-3 font-light">Business</div>
@@ -909,12 +1428,12 @@
             </div>
           </div>
 
-          <div class="nav-bar__item nav-bar__item--full-width">
+          <div class="nav-bar__item nav-bar__item--full-width pr-4 font-bold">
             <a href="#" class="nav-bar__link">
               Opinion
               <i class="fa-solid fa-angle-down fa-xs" aria-hidden="true"></i>
             </a>
-            <div class="nav-bar__dropdown">
+            <div class="nav-bar__dropdown block border border-[#eee] py-[35px] px-5 top-full left-0 right-0 bg-white">
               <div class="nav-bar__dropdown-content flex gap-10 max-w-[1200px] mx-auto">
                 <div class="nav-bar__dropdown-left w-[250px] shrink-0">
                   <div class="nav-bar__dropdown-heading text-[26px] mb-3 font-light">Opinion</div>
@@ -996,12 +1515,12 @@
             </div>
           </div>
 
-          <div class="nav-bar__item nav-bar__item--full-width">
+          <div class="nav-bar__item nav-bar__item--full-width pr-4 font-bold">
             <a href="#" class="nav-bar__link">
               EpochHealth
               <i class="fa-solid fa-angle-down fa-xs" aria-hidden="true"></i>
             </a>
-            <div class="nav-bar__dropdown">
+            <div class="nav-bar__dropdown block border border-[#eee] py-[35px] px-5 top-full left-0 right-0 bg-white">
               <div class="nav-bar__dropdown-content flex gap-10 max-w-[1200px] mx-auto">
                 <div class="nav-bar__dropdown-left w-[250px] shrink-0">
                   <div class="nav-bar__dropdown-heading text-[26px] mb-3 font-light">EpochHealth</div>
@@ -1138,12 +1657,12 @@
             </div>
           </div>
 
-          <div class="nav-bar__item nav-bar__item--full-width">
+          <div class="nav-bar__item nav-bar__item--full-width pr-4 font-bold">
             <a href="#" class="nav-bar__link">
               Bright
               <i class="fa-solid fa-angle-down fa-xs" aria-hidden="true"></i>
             </a>
-            <div class="nav-bar__dropdown">
+            <div class="nav-bar__dropdown block border border-[#eee] py-[35px] px-5 top-full left-0 right-0 bg-white">
               <div class="nav-bar__dropdown-content flex gap-10 max-w-[1200px] mx-auto">
                 <div class="nav-bar__dropdown-left w-[250px] shrink-0">
                   <div class="nav-bar__dropdown-heading text-[26px] mb-3 font-light">Bright</div>
@@ -1232,12 +1751,12 @@
             </div>
           </div>
 
-          <div class="nav-bar__item nav-bar__item--full-width">
+          <div class="nav-bar__item nav-bar__item--full-width pr-4 font-bold">
             <a href="#" class="nav-bar__link">
               Lifestyle
               <i class="fa-solid fa-angle-down fa-xs" aria-hidden="true"></i>
             </a>
-            <div class="nav-bar__dropdown">
+            <div class="nav-bar__dropdown block border border-[#eee] py-[35px] px-5 top-full left-0 right-0 bg-white">
               <div class="nav-bar__dropdown-content flex gap-10 max-w-[1200px] mx-auto">
                 <div class="nav-bar__dropdown-left w-[250px] shrink-0">
                   <div class="nav-bar__dropdown-heading text-[26px] mb-3 font-light">Lifestyle</div>
@@ -1394,12 +1913,12 @@
             </div>
           </div>
 
-          <div class="nav-bar__item nav-bar__item--full-width">
+          <div class="nav-bar__item nav-bar__item--full-width pr-4 font-bold">
             <a href="#" class="nav-bar__link">
               Games
               <i class="fa-solid fa-angle-down fa-xs" aria-hidden="true"></i>
             </a>
-            <div class="nav-bar__dropdown">
+            <div class="nav-bar__dropdown block border border-[#eee] py-[35px] px-5 top-full left-0 right-0 bg-white">
               <div class="nav-bar__dropdown-content flex gap-10 max-w-[1200px] mx-auto">
                 <div class="nav-bar__dropdown-left w-[250px] shrink-0">
                   <div class="nav-bar__dropdown-heading text-[26px] mb-3 font-light">Games</div>
@@ -1539,12 +2058,12 @@
             </div>
           </div>
 
-          <div class="nav-bar__item nav-bar__item--full-width">
+          <div class="nav-bar__item nav-bar__item--full-width pr-4 font-bold">
             <a href="#" class="nav-bar__link">
               Sports
               <i class="fa-solid fa-angle-down fa-xs" aria-hidden="true"></i>
             </a>
-            <div class="nav-bar__dropdown">
+            <div class="nav-bar__dropdown block border border-[#eee] py-[35px] px-5 top-full left-0 right-0 bg-white">
               <div class="nav-bar__dropdown-content flex gap-10 max-w-[1200px] mx-auto">
                 <div class="nav-bar__dropdown-left w-[250px] shrink-0">
                   <div class="nav-bar__dropdown-heading text-[26px] mb-3 font-light">Sports</div>
@@ -1632,19 +2151,19 @@
             </div>
           </div>
 
-          <div class="nav-bar__item nav-bar__item--full-width">
+          <div class="nav-bar__item nav-bar__item--full-width pr-4 font-bold">
             <a href="#" class="nav-bar__link">Entertainment</a>
           </div>
-          <div class="nav-bar__item nav-bar__item--full-width">
+          <div class="nav-bar__item nav-bar__item--full-width pr-4 font-bold">
             <a href="#" class="nav-bar__link">Podcast</a>
           </div>
 
-          <div class="nav-bar__item nav-bar__item--full-width">
+          <div class="nav-bar__item nav-bar__item--full-width pr-4 font-bold">
             <a href="#" class="nav-bar__link">
               EpochTV
               <i class="fa-solid fa-angle-down fa-xs" aria-hidden="true"></i>
             </a>
-            <div class="nav-bar__dropdown">
+            <div class="nav-bar__dropdown block border border-[#eee] py-[35px] px-5 top-full left-0 right-0 bg-white">
               <div class="nav-bar__dropdown-content flex gap-10 max-w-[1200px] mx-auto">
                 <div class="nav-bar__dropdown-left w-[250px] shrink-0">
                   <div class="nav-bar__dropdown-heading text-[26px] mb-3 font-light">EpochTV</div>
@@ -1782,9 +2301,25 @@
         </div>
 
         <div class="nav-bar__right h-12 flex items-center">
-          <button id="login-btn" class="login-template-btn light-btn">LOG IN</button>
-          <button id="signup-btn" class="login-template-btn light-btn">FREE ACCOUNT</button>
-          <button class="login-template-btn dark-btn">SUBSCRIBE</button>
+          <button
+            id="login-btn"
+            class="mx-0.5 px-[5px] rounded h-6 flex justify-center items-center cursor-pointer text-[11px] font-bold antialiased appearance-none w-20 whitespace-nowrap bg-white border border-[#979797] text-black"
+          >
+            LOG IN
+          </button>
+
+          <button
+            id="signup-btn"
+            class="mx-0.5 px-[5px] rounded h-6 flex justify-center items-center cursor-pointer text-[11px] font-bold antialiased appearance-none w-max whitespace-nowrap bg-white border border-[#979797] text-black"
+          >
+            FREE ACCOUNT
+          </button>
+
+          <button
+            class="mx-0.5 px-[5px] rounded h-6 flex justify-center items-center cursor-pointer text-[11px] font-bold antialiased appearance-none w-20 bg-[#0d73ea] border border-[#0d73ea] text-white"
+          >
+            SUBSCRIBE
+          </button>
         </div>
       </div>
     </nav>
@@ -1866,7 +2401,7 @@
           </div>
         </article>
 
-        <hr class="content__divider_bold" />
+        <hr class="content__divider_bold mt-5 mb-7 border-0 border-t border-black" />
 
         <section class="stories-section flex flex-col gap-5">
           <article class="featured-story grid grid-cols-[2fr_3fr] gap-6">
@@ -2061,7 +2596,7 @@
           </div>
         </section>
 
-        <hr class="content__divider_bold" />
+        <hr class="content__divider_bold mt-5 mb-7 border-0 border-t border-black" />
 
         <article class="story-card grid grid-cols-[2fr_3fr] items-start gap-x-6">
           <div class="story-card__content flex flex-col gap-[1.2rem]">
@@ -2399,7 +2934,7 @@
           </section>
         </section>
 
-        <hr class="content__divider_bold" />
+        <hr class="content__divider_bold mt-5 mb-7 border-0 border-t border-black" />
 
         <article class="story-card grid grid-cols-[2fr_3fr] items-start gap-x-6">
           <div class="story-card__content flex flex-col gap-[1.2rem]">
@@ -2462,7 +2997,7 @@
           </div>
         </article>
 
-        <hr class="content__divider_bold hide-in-mobile" />
+        <hr class="content__divider_bold mt-5 mb-7 border-0 border-t border-black hide-in-mobile" />
 
         <section class="stories-section hide-in-mobile flex flex-col gap-5">
           <article class="featured-story grid grid-cols-[2fr_3fr] gap-6">
@@ -2809,7 +3344,7 @@
           </div>
         </section>
 
-        <hr class="content__divider_bold" />
+        <hr class="content__divider_bold mt-5 mb-7 border-0 border-t border-black" />
 
         <article class="story-card grid grid-cols-[2fr_3fr] items-start gap-x-6">
           <div class="story-card__content flex flex-col gap-[1.2rem]">
@@ -2870,7 +3405,7 @@
           ></span>
         </a> -->
 
-        <hr class="content__divider_bold" />
+        <hr class="content__divider_bold mt-5 mb-7 border-0 border-t border-black" />
 
         <article class="story-card grid grid-cols-[2fr_3fr] items-start gap-x-6">
           <div class="story-card__content flex flex-col gap-[1.2rem]">
@@ -2933,7 +3468,7 @@
           </div>
         </article>
 
-        <hr class="content__divider_bold" />
+        <hr class="content__divider_bold mt-5 mb-7 border-0 border-t border-black" />
 
         <article class="story-card grid grid-cols-[2fr_3fr] items-start gap-x-6">
           <div class="story-card__content flex flex-col gap-[1.2rem]">
@@ -3200,7 +3735,7 @@
           </div>
         </section>
 
-        <hr class="content__divider_bold" />
+        <hr class="content__divider_bold mt-5 mb-7 border-0 border-t border-black" />
 
         <article class="story-card grid grid-cols-[2fr_3fr] items-start gap-x-6">
           <div class="story-card__content flex flex-col gap-[1.2rem]">
@@ -3262,7 +3797,7 @@
           </div>
         </article>
 
-        <hr class="content__divider_bold" />
+        <hr class="content__divider_bold mt-5 mb-7 border-0 border-t border-black" />
 
         <section class="stories-section flex flex-col gap-5">
           <article class="featured-story grid grid-cols-[2fr_3fr] gap-6">
@@ -3465,7 +4000,7 @@
           </div>
         </section>
 
-        <hr class="content__divider_bold" />
+        <hr class="content__divider_bold mt-5 mb-7 border-0 border-t border-black" />
 
         <section class="stories-section flex flex-col gap-5">
           <article class="featured-story grid grid-cols-[2fr_3fr] gap-6">
@@ -3659,7 +4194,7 @@
             </article>
           </div>
         </section>
-        <hr class="content__divider_bold" />
+        <hr class="content__divider_bold mt-5 mb-7 border-0 border-t border-black" />
 
         <article class="story-card grid grid-cols-[2fr_3fr] items-start gap-x-6">
           <div class="story-card__content flex flex-col gap-[1.2rem]">
@@ -3961,11 +4496,11 @@
 
         <!-- Wellness -->
         <section class="wellness-section flex flex-col gap-4">
-          <header class="wellness-section__header border-t">
-            <a href="#" class="wellness-section__title-link text-[0.89rem] font-semibold uppercase text-[#111]"
-              >WELLNESS</a
-            >
-          </header>
+          <header class="wellness-section__header border-t w-full mt-4 mb-2 pt-2.5">
+  <a href="#" class="wellness-section__title-link text-[0.89rem] font-semibold uppercase text-[#111]">
+    WELLNESS
+  </a>
+</header>
 
           <div class="wellness-section__list flex flex-col">
             <article

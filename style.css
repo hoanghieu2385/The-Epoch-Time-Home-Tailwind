@@ -32,61 +32,6 @@ a {
   opacity: 1;
 }
 
-.sidebar-nav__search-input {
-  width: 100%;
-  height: 44px;
-  border-radius: 4px;
-  border: 1px solid #cfcfcf;
-}
-
-.sidebar-nav__list {
-  font-family: sans-serif;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-  flex-grow: 1;
-}
-
-.sidebar-nav__link {
-  display: flex;
-  align-items: center;
-  height: 40px;
-  padding: 0 1.5rem;
-
-  font-size: 0.875rem;
-  font-weight: bold;
-}
-
-.sidebar-nav__group {
-  display: flex;
-  align-items: center;
-  height: 40px;
-  padding: 0 1.5rem;
-
-  font-weight: bold;
-}
-
-.sidebar-nav__group-title {
-  font-family: sans-serif;
-  font-size: 0.875rem;
-}
-
-.sidebar-nav__toggle {
-  margin-left: auto;
-}
-
-.sidebar-nav__footer-item {
-  height: 34px;
-  display: flex;
-  align-items: center;
-  padding: 0 1.5rem;
-}
-
-.sidebar-nav__footer-link {
-  font-size: 0.875rem;
-}
-
 /* Submenu trong sidebar */
 .sidebar-nav__item--has-submenu {
   position: relative;
@@ -96,32 +41,10 @@ a {
   background-color: #f4f4f4;
 }
 
-.sidebar-nav__submenu {
-  position: fixed;
-  width: 220px;
-  background-color: #fff;
-
-  border: 1px solid #f0f0f0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
-  z-index: 110;
-  visibility: hidden;
-  opacity: 0;
-}
-
 /* Khi di chuột vào item cha, hiển thị menu con */
 .sidebar-nav__item--has-submenu:hover > .sidebar-nav__submenu {
   visibility: visible;
   opacity: 1;
-}
-
-.sidebar-nav__submenu-link {
-  display: block;
-  padding: 0.5rem 1.5rem;
-
-  font-size: 0.875rem;
-  font-weight: 600;
-  white-space: nowrap;
 }
 
 .sidebar-nav__submenu-link:hover {
@@ -155,40 +78,16 @@ a {
 .nav-bar__editions-menu {
   display: none;
   position: absolute;
-  min-width: 100px;
-  width: 145px;
-  padding: 12px 0 28px 0;
-  border: 1px solid #ccc;
-  background-color: #fff;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.nav-bar__editions-menu a {
-  display: block;
-  padding: 4px 16px;
-}
-
-/* *** NAV-BAR__CENTER */
-.nav-bar__item--full-width {
-  padding-right: 1rem;
-  font-weight: 600;
 }
 
 /* -- Main Dropdown Container -- */
 .nav-bar__dropdown {
-  display: block;
   position: absolute;
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s ease-in-out, visibility 0.3s;
-  background-color: white;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-  border: 1px solid #eee;
-  padding: 35px 20px;
-  top: 100%;
-  left: 0;
-  right: 0;
 }
 
 .nav-bar__item:hover .nav-bar__dropdown {
@@ -198,43 +97,6 @@ a {
 
 .nav-bar__dropdown-heading {
   font-family: 'EB Garamond';
-}
-
-/* *** NAV-BAR__RIGHT  */
-.login-template-btn {
-  margin: 0 2px;
-  padding: 0 5px;
-  border-radius: 4px;
-  height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  cursor: pointer;
-  font-size: 11px;
-  font-weight: bold;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: auto;
-  -webkit-appearance: none;
-}
-
-.light-btn {
-  width: 80px;
-  white-space: nowrap;
-  background: white;
-  border: 1px solid #979797;
-  color: black;
-}
-
-#signup-btn {
-  width: max-content;
-}
-
-.dark-btn {
-  background: #0d73ea;
-  border: 1px solid #0d73ea;
-  color: white;
-  width: 80px;
 }
 
 /* Home-main */
@@ -260,34 +122,6 @@ a {
   width: 70%;
 }
 
-.content__divider {
-  margin-top: 1.75rem;
-  margin-bottom: 1.75rem;
-  border: 0;
-  border-top: 1px solid #e0e0e0;
-}
-
-.content__divider_bold {
-  margin-top: 1.25rem;
-  margin-bottom: 1.75rem;
-  border: 0;
-  border-top: 1px solid black;
-}
-
-.article-tag {
-  display: inline-flex;
-  background-color: #1f2937;
-  color: white;
-  font-size: 10px;
-  font-weight: 500;
-  text-transform: uppercase;
-  padding: 0 0.25rem;
-  border-radius: 2px;
-  line-height: 1.8;
-  letter-spacing: 0.2px;
-  align-self: flex-start;
-}
-
 /* *** ASIDE */
 aside.page__sidebar {
   width: 27.25%;
@@ -301,6 +135,7 @@ aside.page__sidebar {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .carousel__dot {
   width: 8px;
   height: 8px;
@@ -317,13 +152,6 @@ aside.page__sidebar {
 }
 
 /* --- WELLNESS --- */
-.page__sidebar .wellness-section__header {
-  width: 100%;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-  padding-top: 10px;
-}
-
 .featured-card__title {
   font-weight: 300 !important;
 }
