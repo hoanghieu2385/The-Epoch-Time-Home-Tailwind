@@ -11,18 +11,7 @@ a {
   text-decoration: none;
 }
 
-.nav-bar {
-  background-color: #fafafa;
-  border-bottom: 1px solid #dfdfdf;
-  font-size: 14px;
-  z-index: 1000;
-}
-
 /* Sidebar */
-.sidebar-nav__overlay {
-  background-color: rgba(46, 46, 46, 0.6);
-}
-
 /* --- Trạng thái KHI MỞ --- */
 .sidebar-nav--open {
   overflow: visible;
@@ -33,9 +22,6 @@ a {
 }
 
 /* Submenu trong sidebar */
-.sidebar-nav__item--has-submenu {
-  position: relative;
-}
 
 .sidebar-nav__item--has-submenu:hover > .sidebar-nav__group {
   background-color: #f4f4f4;
@@ -64,10 +50,6 @@ a {
 .search-overlay--visible {
   visibility: visible;
   opacity: 1;
-}
-
-.search-overlay__close-button {
-  position: absolute;
 }
 
 /* *** EDITIONS */
@@ -99,34 +81,7 @@ a {
   font-family: 'EB Garamond';
 }
 
-/* Home-main */
-.home-main {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1200px;
-}
-
-/* Header */
-.header__center img {
-  width: 402px;
-}
-
-/* --- CÁC STYLE CHUNG --- */
-.page {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.content {
-  width: 70%;
-}
-
 /* *** ASIDE */
-aside.page__sidebar {
-  width: 27.25%;
-}
-
 /* --- Bố cục chính của Carousel --- */
 .slide-content__title {
   display: -webkit-box;
@@ -177,21 +132,11 @@ aside.page__sidebar {
   flex: 0 0 calc(50% - 0.5rem);
 }
 
-/* *** BLOCK GROUP */
-.block-group {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 .article-card {
   width: calc((100% - 3 * 1.25rem) / 4);
 }
 
 /* PODCAST */
-.podcasts-section__title-link {
-  font-family: sans-serif;
-}
-
 .podcast-card {
   width: calc(28%);
   min-width: 300px;
@@ -204,25 +149,9 @@ aside.page__sidebar {
 }
 
 /* --- CATEGORY cuối trang --- */
-.category-grid {
-  margin: 4rem auto;
-}
-
-.category-grid .post-list__item {
-  height: 5rem;
-}
 
 /* CSS CHO LƯỚI 4 CỘT */
 .font-light {
   font-weight: 300 !important;
   font-family: EB Garamond, Times, serif;
-}
-
-.category-grid-4 {
-  margin: 4rem auto;
-}
-
-.category-grid-4 .featured-post__link,
-.category-grid-4 .post-list__link {
-  min-height: 5rem;
 }
